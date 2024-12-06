@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  pprotein:
+    platform: linux/amd64
+    build: .
+    ports:
+      - "80:9000"
+    volumes:
+      - ./data:/app/data
